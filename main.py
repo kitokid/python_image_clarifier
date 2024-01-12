@@ -1,7 +1,6 @@
 import tkinter as tk
 from tkinter import filedialog, ttk
-from PIL import Image, ImageTk
-import tensorflow as tf
+from PIL import Image
 from tensorflow.keras.preprocessing import image
 from tensorflow.keras.applications.inception_v3 import InceptionV3, preprocess_input, decode_predictions
 import numpy as np
@@ -10,7 +9,6 @@ class ImageClassifierApp:
     def __init__(self, master):
         self.master = master
         self.master.title("Image Classifier App")
-
         self.image_path = None
 
         style = ttk.Style()
